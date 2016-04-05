@@ -22,18 +22,20 @@
 
                 <h:column>
                     <f:facet name="header">EDITAR</f:facet>
-                    <p><h:commandLink  
+                    <p>
+                        <h:commandLink  
                             action="#{alunoBean.selecionarAluno(aluno)}"
-                            value="editar"</p>
+                            value="editar"/>
+                    </p>
                 </h:column>
 
             </h:dataTable>
         </h:form>
         <ui:repeat value="#{alunoBean.listaAlunos}" var="aluno">
-            <li>#{aluno.RGA} #{aluno.nome}</li>
+            <li>#{aluno.RGA} - #{aluno.nome}</li>
         </ui:repeat>
         
-        Hello from Facelets
+       
     </h:body>
 </html>
 
