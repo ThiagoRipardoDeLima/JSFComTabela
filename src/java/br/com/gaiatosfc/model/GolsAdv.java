@@ -44,9 +44,7 @@ public class GolsAdv  implements java.io.Serializable {
        this.momentoGol = momentoGol;
     }
    
-     @Id 
-
-    
+    @Id  
     @Column(name="cod_g_adv", unique=true, nullable=false)
     public int getCodGAdv() {
         return this.codGAdv;
