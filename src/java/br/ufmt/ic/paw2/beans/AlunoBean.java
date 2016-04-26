@@ -39,7 +39,7 @@ public class AlunoBean {
         this.alunoSelecionado = aluno;
         return "edita-aluno";
     }
-    //teste
+    //teste1
     public Aluno getAlunoSelecionado() {
         return alunoSelecionado;
     }
